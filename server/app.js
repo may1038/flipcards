@@ -5,7 +5,7 @@ const session = require("express-session")
 app.use(express.static("public"))
 app.use(bodyParser.json())
 
-const route = require("./routes/mainroute")
+const route = require("./routes/users")
 app.use(route)
 
 app.listen(3000, function(req, res) {
